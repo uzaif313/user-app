@@ -1,0 +1,29 @@
+	<div class="row" align="center">
+		
+	<h1 class="page-header">Add Users</h1>
+	<%= render "form" %> 
+	</div>
+
+<div class="row">
+	<h2 class="page-header">List All Users</h2>
+	<ul id="users" class="list-group">
+		<%= render @users %>
+	</ul>
+</div>
+
+<%= render "modal" %>
+
+
+<script type="text/javascript">
+	$(function(){
+		/*$(".update").on("click",function(){
+
+			// var parent_row = $(this).closest(".row");
+			// var email      = parent_row.find(".email").text();
+			// var name       = parent_row.find(".name").text();
+			// var id		   = parent_row.attr("id")
+			// $(".modal-body  #name").val(name);
+			// $(".modal-body  #email").val(email);
+		})*/
+	});
+</script>

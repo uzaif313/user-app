@@ -1,0 +1,18 @@
+<li class="list-group-item" id="<%=user.id%>">
+	<div class="row" id="<%="#{user.id}"%>">
+		
+		<div class="col-md-4" >
+			<h4 class="name"><%= user.name %></h4>
+		</div>			
+		<div class="col-md-4">
+			<h5 class="email"><%= user.email %></h5>
+		</div>
+		<div class="col-md-2">
+			<%= link_to	"Delete",user,method: :delete,remote:true,class:"btn btn-danger glyphicon glyphicon-trash",:data=>{confirm:"Are You Sure?"} %>
+		</div>
+
+		<div class="col-md-2">
+			<%= link_to	"update",edit_user_path(user),remote:true,class:"btn update btn-success glyphicon glyphicon-pencil" %>
+		</div>						
+	</div>
+</li>

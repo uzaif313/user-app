@@ -1,0 +1,13 @@
+<%= form_for(@user,remote:true,:html => {:class => "form-inline center form-inline",:align=>"center"}) do |f| %>
+		<div class="form-group">
+			<%= f.label :name %>
+			<%= f.text_field :name,id:"name",class:"form-control" %>
+		</div>
+		<div class="form-group">
+			<%= f.label :email%>
+			<%= f.email_field :email,id:"email" ,class:"form-control "%>
+		</div>
+		<div class="form-group ">
+			<%= f.submit @user.new_record? ? "Add" : "update" ,class:"btn btn-primary form-control" %>
+		</div>
+	<% end %>
